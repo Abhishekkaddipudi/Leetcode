@@ -1,3 +1,8 @@
+import sys
+sys.stdin=open('input.txt','r')
+sys.stdout=open('output.txt','w')
+
+
 def equalFrequency(word: str) -> bool:
     freq={}
     flag=True

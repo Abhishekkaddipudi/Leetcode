@@ -1,18 +1,1 @@
-    def equalFrequency(self, word: str) -> bool:
-        freq={}
-        flag=True
-        for i in word:
-            if i in freq:
-                freq[i]+=1
-                flag=False
-            else:
-                freq[i]=1
-        if flag:
-            return True
-        uniq_freq=set(freq.values())
-
-        iter_uniq_freq=iter(uniq_freq)
-        if len(uniq_freq)==2 and abs(next(iter_uniq_freq)-next(iter_uniq_freq))==1:
-            return True
-        else:
-            return False
+49
